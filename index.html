@@ -3,83 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAVIA</title>
+    <title>Próximamente - Pizzaquirá</title>
     <style>
-        /* Un poco de estilo básico para que se vea bien */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+        body, html {
+            height: 100%;
             margin: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
         }
-        header {
-            background: #2c3e50;
-            color: white;
-            padding: 1rem;
+
+        .bg-image {
+            /* Cambia 'fondo.jpg' por el nombre de tu imagen */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("fondo.jpg");
+            
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
-        nav {
-            background: #34495e;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
+
+        .texto-central {
             color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-            background: white;
-            min-height: 400px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
         }
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 20px;
-        }
-        .boton {
-            display: inline-block;
-            background: #e67e22;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
+
+        p {
+            font-size: 1.5rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>SAVIA</h1>
-    </header>
-
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Contacto</a>
-    </nav>
-
-    <div class="container">
-        <h2>PROXIMAMENTE</h2>
-  
-
-        <p>Puedes editar este archivo en cualquier editor de texto (como VS Code o Notepad++) y abrirlo en tu navegador favorito.</p>
-        
-        <a href="#" class="boton">¡Haz clic aquí!</a>
+    <div class="bg-image">
+        <div class="texto-central">
+            <h1>LO ESTAMOS PREPARANDO TODO PARA TI</h1>
+            <p>Muy pronto, el mejor sabor en Zipaquirá.</p>
+        </div>
     </div>
-
-    <footer>
-        <p>SAVIA - Creado con ❤️</p>
-    </footer>
 
 </body>
 </html>
