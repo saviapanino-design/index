@@ -3,128 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savia - Cajicá</title>
-    <style>
-        /* Estilos base */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            background-color: #f4f7f4; /* Un tono claro orgánico */
-            font-family: 'Segoe UI', Roboto, sans-serif;
-        }
-
-        /* Animación de fondo (Efecto zoom suave) */
-        @keyframes breathing {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        .contenedor {
-            position: relative;
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-
-        .fondo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url("fondo.jpg");
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: 1;
-            animation: breathing 10s ease-in-out infinite;
-        }
-
-        /* Capa de contenido */
-        .contenido {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end; /* Texto abajo para no tapar el logo central */
-        }
-
-        .mensaje-footer {
-            background: rgba(255, 255, 255, 0.85); /* Fondo blanco traslúcido */
-            padding: 30px 20px;
-            backdrop-filter: blur(8px);
-            border-top: 4px solid #4CAF50; /* Verde Savia */
-        }
-
-        h1 {
-            color: #2e4a2e;
-            margin: 0;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        p {
-            color: #555;
-            margin: 10px 0 20px;
-            font-size: 1.1rem;
-        }
-
-        /* Botón de WhatsApp Animado */
-        .btn-whatsapp {
-            display: inline-flex;
-            align-items: center;
-            background-color: #25d366;
-            color: white;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 50px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s ease;
-            margin-bottom: 10px;
-        }
-
-        .btn-whatsapp:hover {
-            transform: scale(1.1);
-            background-color: #128c7e;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .fondo { background-size: 85%; }
-            h1 { font-size: 1.2rem; }
-            .mensaje-footer { padding: 20px 10px; }
-        }
-    </style>
+    <title>Savia| Para ti con amor</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <div class="contenedor">
-        <div class="fondo"></div>
-        
-        <div class="contenido">
-            <div class="mensaje-footer">
-                <h1>LO ESTAMOS PREPARANDO TODO PARA TI</h1>
-                <p>Savia llegará pronto a Cajicá</p>
-                
-                <a href="https://wa.me/573000000000?text=Hola%20Savia!%20Quiero%20más%20información" class="btn-whatsapp" target="_blank">
-                    Escríbenos por WhatsApp
-                </a>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-text">Savia</div>
+                <button class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#carta">Catálogo</a></li>
+                    <li><a href="#pedido">Hacer Pedido</a></li>
+                    <li><a href="#contacto">Contáctanos</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="Savia Panino Logo" class="main-logo">
+        </div>
+    </section>
+
+    <section id="carta" class="menu-section">
+        <h2 class="section-title">Nuestra Carta</h2>
+        <div class="menu-container">
+            <img src="carta1.jpg" alt="Menú Savia 1" class="menu-image">
+            <img src="carta2.jpg" alt="Menú Savia 2" class="menu-image">
+        </div>
+    </section>
+
+    <a href="https://wa.me/573011440032" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <p>Savia Panino - para ti con amor</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
