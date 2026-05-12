@@ -1,56 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Savia| Para ti con amor</title>
+    <title>Savia | Para ti con amor</title>
+
     <link rel="icon" type="image/png" href="logo.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo-text">Savia</div>
-                <button class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#carta">Catálogo</a></li>
-                    <li><a href="#pedido">Hacer Pedido</a></li>
-                    <li><a href="#contacto">Contáctanos</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+        <div class="nav-container">
 
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <img src="logo.png" alt="Savia Panino Logo" class="main-logo">
+            <div class="logo-text">Savia</div>
+
+            <button class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#carta">Catálogo</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+
         </div>
-    </section>
+    </nav>
+</header>
 
-    <section id="carta" class="menu-section">
-        <h2 class="section-title">Nuestra Carta</h2>
-        <div class="menu-container">
-            <img src="MENUSAVIA.jpg" alt="Menú Savia 1" class="menu-image">
-          
-        </div>
-    </section>
+<!-- HERO -->
+<section id="inicio" class="hero">
 
-    <a href="https://wa.me/573011440032" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <div class="hero-content">
 
-    <footer>
-        <p>Savia Panino - para ti con amor</p>
-    </footer>
+        <!-- TEXTO EN VEZ DEL LOGO -->
+        <h1>Sandwich artesanal</h1>
 
-    <script src="app.js"></script>
+        <p>Para ti con amor ❤️</p>
+
+    </div>
+
+</section>
+
+<!-- MENU -->
+<section id="carta" class="menu-section">
+
+    <h2 class="section-title">Nuestra Carta</h2>
+
+    <div class="menu-container">
+        <img src="MENUSAVIA.jpg"
+        alt="Menú Savia"
+        class="menu-image">
+    </div>
+
+</section>
+
+<!-- UBICACION -->
+<section id="ubicacion" class="location-section">
+
+    <h2 class="section-title">Visítanos</h2>
+
+    <div class="location-content">
+
+        <p>
+            <i class="fas fa-map-marker-alt"></i>
+            KR 6 No. 4A SUR - 34, Cajicá
+        </p>
+
+        <p>
+            Frente al OXXO
+        </p>
+
+        <a href="https://maps.google.com"
+        target="_blank"
+        class="map-button">
+            Ver ubicación
+        </a>
+
+    </div>
+
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/573011440032"
+class="whatsapp-float"
+target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- FOOTER -->
+<footer>
+    <p>Savia Panino - para ti con amor</p>
+</footer>
+
+<script src="app.js"></script>
+
 </body>
 </html>
